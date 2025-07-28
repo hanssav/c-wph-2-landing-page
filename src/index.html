@@ -1,12 +1,1271 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WPH Challenge 2</title>
     <link rel="stylesheet" href="./css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>your code here</h1>
+  <body class="bg-white text-light dark:text-dark dark:bg-black font-quicksand">
+    <header
+      class="sticky top-0 backdrop-blur-2xl z-60 backdrop:blur-2xl flex justify-between items-center py-6 px-4 md:px-[140px]"
+    >
+      <div class="">
+        <img src="./public/images/light-logo.svg" alt="logo" class="" />
+      </div>
+      <nav class="hidden md:inline">
+        <ul class="flex gap-3 text-base font-semibold items-center">
+          <li>About</li>
+          <li>Service</li>
+          <li>Projects</li>
+          <li>Testimonial</li>
+          <li>FAQ</li>
+        </ul>
+      </nav>
+      <div class="hidden md:block">
+        <button class="bg-primary p-2 rounded-full text-white w-[197px]">
+          Lets Talk
+        </button>
+      </div>
+      <div class="md:hidden">
+        <img src="./public/icons/menu.svg" alt="menu-icon" />
+      </div>
+    </header>
+
+    <main class="py-6 px-4 md:px-[140px]">
+      <section class="h-[747px] lg:flex w-full items-center">
+        <div class="flex flex-col gap-10 lg:w-[653px] z-50">
+          <div class="flex flex-col gap-2">
+            <h1
+              class="font-bold text-4xl lg:text-6xl tracking-tight lg:leading-[68px] leading-11"
+            >
+              Your Tech Partner for
+              <span class="text-primary">Smarter Growth</span>
+            </h1>
+            <p class="font-normal text-base lg:text-xl">
+              We deliver tailored IT solutions to help you scale with speed and
+              confidence.
+            </p>
+          </div>
+          <button
+            class="w-full bg-primary p-2 rounded-full text-white font-bold text-sm leading-7 lg:w-[200px]"
+          >
+            Lets Talk
+          </button>
+        </div>
+        <div class="absolute w-full mt-8 lg:mt-0 right-0 lg:top-0 z-0 lg:w-1/2">
+          <div class="relative h-[391px] lg:h-full w-full">
+            <img
+              class="w-full h-auto object-cover"
+              src="./public/images/hero-img.svg"
+              alt="hero-images"
+            />
+            <!-- ======================NEED TO ADJUST WIDTH  -->
+            <div
+              class="absolute bottom-0 left-0 w-1/2 h-full bg-gradient-to-r from-white to-transparent z-30"
+            ></div>
+            <div
+              class="absolute bottom-0 right-0 w-full lg:h-[200px] bg-gradient-to-t from-white to-transparent z-30"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="relative flex flex-col items-center h-[144px] lg:h-[236px]"
+      >
+        <div class="relative font-bold text-base tracking-tight lg:text-2xl">
+          <p class="">Trusted by Global Innovators & Leading Brands</p>
+        </div>
+
+        <div
+          class="absolute bottom-0 w-[393px] h-[114px] lg:w-screen lg:h-[200px] isolate flex overflow-hidden gap-12 p-10 justify-center items-center"
+        >
+          <div class="company-logo bg-[#707070]">
+            <img
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              src="./public/images/company-logo-adobe.svg"
+              alt=""
+            />
+          </div>
+          <div class="company-logo">
+            <img
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              src="./public/images/company-logo-upwork.svg"
+              alt=""
+            />
+          </div>
+          <div class="company-logo">
+            <img
+              src="./public/images/company-logo-zoom.svg"
+              alt=""
+              class="filter grayscale brightness-0 opacity-70"
+            />
+          </div>
+          <div class="company-logo">
+            <img
+              src="./public/images/company-logo-postman.svg"
+              class="filter grayscale brightness-0 opacity-70"
+              alt=""
+            />
+          </div>
+          <div class="company-logo">
+            <img
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              src="./public/images/company-logo-databricks.svg"
+              alt=""
+            />
+          </div>
+          <div class="company-logo">
+            <img
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              src="./public/images/company-logo-airbnb.svg"
+              alt=""
+            />
+          </div>
+          <div class="company-logo">
+            <img
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              src="./public/images/company-logo-dropbox.svg"
+              alt=""
+            />
+          </div>
+          <div class="company-logo">
+            <img
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              src="./public/images/company-logo-paypal.svg"
+              alt=""
+            />
+          </div>
+          <div class="company-logo">
+            <img
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              src="./public/images/company-logo-netflix.svg"
+              alt=""
+            />
+          </div>
+
+          <!-- blur card -->
+          <div
+            class="blur-card absolute w-[45.55px] h-[98px] lg:w-[260px] lg:h-[200px] left-0 lg:-left-[5px] top-2 bg-gradient-to-r from-white from-[89.71%] lg:from-[50%] to-[36.1%] to-transparent"
+          ></div>
+
+          <div
+            class="blur-card absolute w-[45.55px] h-[98px] lg:w-[260px] lg:h-[200px] right-0 top-2 lg:-right-[5px] bg-gradient-to-r from-white from-[89.71%] lg:from-[50%] to-[36.1%] to-transparent rotate-180"
+          ></div>
+        </div>
+      </section>
+
+      <section class="flex flex-col py-20 px-4 gap-6 lg:gap-16">
+        <div class="text-center flex flex-col gap-[11px]">
+          <h2
+            class="font-bold text-[28px] leading-[38px] lg:text-[40px] lg:leading-[56px]"
+          >
+            End-to-End IT Solutions That Drive Results
+          </h2>
+          <p class="font-medium leading-7 lg:text-lg lg:leading-9">
+            From strategy to execution, we deliver solutions that grow your
+            business.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5 text-center">
+          <div
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-[#FAFAFA] border-[1px] border-[#DEDCDC] rounded-full aspect-[1/1]"
+          >
+            <h1
+              class="text-primary font-bold text-4xl lg:text-5xl lg:leading-[60px] leading-11"
+            >
+              50+
+            </h1>
+            <p
+              class="font-semibold text-sm leading-7 lg:text-xl lg:leading-[34px]"
+            >
+              Projects Delivered
+            </p>
+          </div>
+
+          <div
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-[#FAFAFA] border-[1px] border-[#DEDCDC] rounded-full aspect-[1/1]"
+          >
+            <h1
+              class="text-primary font-bold text-4xl lg:text-5xl lg:leading-[60px] leading-11"
+            >
+              5+
+            </h1>
+            <p
+              class="font-semibold text-sm leading-7 lg:text-xl lg:leading-[34px]"
+            >
+              Years of Experience
+            </p>
+          </div>
+
+          <div
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-[#FAFAFA] border-[1px] border-[#DEDCDC] rounded-full aspect-[1/1]"
+          >
+            <h1
+              class="text-primary font-bold text-4xl lg:text-5xl lg:leading-[60px] leading-11"
+            >
+              10+
+            </h1>
+            <p
+              class="font-semibold text-sm leading-7 lg:text-xl lg:leading-[34px]"
+            >
+              Industry Awards Won
+            </p>
+          </div>
+
+          <div
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-[#FAFAFA] border-[1px] border-[#DEDCDC] rounded-full aspect-[1/1]"
+          >
+            <h1
+              class="text-primary font-bold text-4xl lg:text-5xl lg:leading-[60px] leading-11"
+            >
+              100%
+            </h1>
+            <p
+              class="font-semibold text-sm leading-7 lg:text-xl lg:leading-[34px]"
+            >
+              Client Satisfaction Rate
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR PROCESS -->
+      <section class="flex flex-col gap-6 py-10 lg:py-20 lg:gap-16 px-4">
+        <div class="flex flex-col gap-[11px] text-center">
+          <h2
+            class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
+          >
+            Our Process
+          </h2>
+          <p class="font-normal text-sm leading-sm lg:text-xl lg:leading-xl">
+            Clear steps. Smart execution. Results you can count on.
+          </p>
+        </div>
+
+        <div class="relative flex flex-col gap-4">
+          <!-- Vertical Line -->
+          <div
+            class="absolute z-0 border-r-[1px] border-base-border h-[calc(100%-94px)] left-[calc(40px/2)] lg:left-[calc(100vw/2-140px)] top-8"
+          ></div>
+
+          <div class="flex gap-4 items-center w-full lg:relative">
+            <!-- object number -->
+            <div
+              class="z-20 size-10 lg:size-12 lg:max-h-12 flex-none object-number max-h-10 bg-primary rounded-full aspect-[1/1] text-white flex items-center justify-center lg:p-2 lg:absolute lg:left-[calc(100vw/2-140px-24px)]"
+            >
+              1
+            </div>
+
+            <!-- Accordion -->
+            <div
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
+            >
+              <div>
+                <h3
+                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+                >
+                  Discovery & Consultation
+                </h3>
+                <p
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                >
+                  Understand Your Needs & Goals
+                </p>
+              </div>
+              <img
+                class="absolute right-4 h-6 w-6"
+                src="./public/icons/chevron-up.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-center w-full lg:relative justify-end">
+            <!-- object number -->
+            <div
+              class="z-20 size-10 lg:size-12 lg:max-h-12 flex-none object-number max-h-10 bg-primary rounded-full aspect-[1/1] text-white flex items-center justify-center lg:p-2 lg:absolute lg:left-[calc(100vw/2-140px-24px)]"
+            >
+              2
+            </div>
+
+            <!-- Accordion -->
+            <div
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
+            >
+              <div>
+                <h3
+                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+                >
+                  Planning & Strategy
+                </h3>
+                <p
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                >
+                  Build a Clear, Scalable Roadmap
+                </p>
+              </div>
+              <img
+                class="absolute right-4 h-6 w-6"
+                src="./public/icons/chevron-up.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-center w-full lg:relative">
+            <!-- object number -->
+            <div
+              class="z-20 size-10 lg:size-12 lg:max-h-12 flex-none object-number max-h-10 bg-primary rounded-full aspect-[1/1] text-white flex items-center justify-center lg:p-2 lg:absolute lg:left-[calc(100vw/2-140px-24px)]"
+            >
+              3
+            </div>
+
+            <!-- Accordion -->
+            <div
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
+            >
+              <div>
+                <h3
+                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+                >
+                  Design & Prototyping
+                </h3>
+                <p
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                >
+                  Craft UX That Converts
+                </p>
+              </div>
+              <img
+                class="absolute right-4 h-6 w-6"
+                src="./public/icons/chevron-up.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-center w-full lg:relative justify-end">
+            <!-- object number -->
+            <div
+              class="z-20 size-10 lg:size-12 lg:max-h-12 flex-none object-number max-h-10 bg-primary rounded-full aspect-[1/1] text-white flex items-center justify-center lg:p-2 lg:absolute lg:left-[calc(100vw/2-140px-24px)]"
+            >
+              4
+            </div>
+
+            <!-- Accordion -->
+            <div
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
+            >
+              <div>
+                <h3
+                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+                >
+                  Development & Implementation
+                </h3>
+                <p
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                >
+                  Deliver With Speed & Precision
+                </p>
+              </div>
+              <img
+                class="absolute right-4 h-6 w-6"
+                src="./public/icons/chevron-up.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-center w-full lg:relative">
+            <!-- object number -->
+            <div
+              class="z-20 size-10 lg:size-12 lg:max-h-12 flex-none object-number max-h-10 bg-primary rounded-full aspect-[1/1] text-white flex items-center justify-center lg:p-2 lg:absolute lg:left-[calc(100vw/2-140px-24px)]"
+            >
+              5
+            </div>
+
+            <!-- Accordion -->
+            <div
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
+            >
+              <div>
+                <h3
+                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+                >
+                  Testing & Optimization
+                </h3>
+                <p
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                >
+                  Ensure Quality at Every Step
+                </p>
+              </div>
+              <img
+                class="absolute right-4 h-6 w-6"
+                src="./public/icons/chevron-up.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="flex gap-4 items-center w-full lg:relative justify-end">
+            <!-- object number -->
+            <div
+              class="z-20 size-10 lg:size-12 lg:max-h-12 flex-none object-number max-h-10 bg-primary rounded-full aspect-[1/1] text-white flex items-center justify-center lg:p-2 lg:absolute lg:left-[calc(100vw/2-140px-24px)]"
+            >
+              6
+            </div>
+
+            <!-- Accordion -->
+            <div
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
+            >
+              <div>
+                <h3
+                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+                >
+                  Scale, Measure & Improve Continuously
+                </h3>
+                <p
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                >
+                  Scale, Measure & Improve Continuously
+                </p>
+              </div>
+              <img
+                class="absolute right-4 h-6 w-6"
+                src="./public/icons/chevron-up.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================== SMART IT ==================================== -->
+
+      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 px-4">
+        <div class="flex flex-col gap-[11px] text-center">
+          <h2
+            class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
+          >
+            Smart IT Solutions That Grow With You
+          </h2>
+          <p
+            class="font-normal text-sm leading-sm lg:text-xl lg:leading-xl tracking-tight"
+          >
+            Tailored tech to boost efficiency, security, and results.
+          </p>
+        </div>
+
+        <!-- SERIVICE ROW -->
+        <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+          <div
+            class="relative card-service bg-base-50 border-[1px] border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+          >
+            <img
+              src="./public/icons/web.svg"
+              class="h-16 w-16 absolute -top-8"
+            />
+            <div class="text-service flex flex-col gap-1 relative">
+              <h3 class="font-bold text-md leading-md">Web Development</h3>
+              <p class="font-normal text-sm leading-sm">
+                Build fast, scalable, and SEO-friendly websites.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative card-service bg-base-50 border-[1px] border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+          >
+            <img
+              src="./public/icons/mobile-app.svg"
+              class="h-16 w-16 absolute -top-8"
+            />
+            <div class="text-service flex flex-col gap-1 relative">
+              <h3 class="font-bold text-md leading-md">
+                Mobile App Development
+              </h3>
+              <p class="font-normal text-sm leading-sm">
+                Native & cross-platform apps tailored to user needs.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative card-service bg-base-50 border-[1px] border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+          >
+            <img
+              src="./public/icons/ui.svg"
+              class="h-16 w-16 absolute -top-8"
+            />
+            <div class="text-service flex flex-col gap-1 relative">
+              <h3 class="font-bold text-md leading-md">UI/UX Design</h3>
+              <p class="font-normal text-sm leading-sm">
+                Delight users with intuitive and beautiful interfaces
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative card-service bg-base-50 border-[1px] border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+          >
+            <img
+              src="./public/icons/cloud.svg"
+              class="h-16 w-16 absolute -top-8"
+            />
+            <div class="text-service flex flex-col gap-1 relative">
+              <h3 class="font-bold text-md leading-md">Cloud Solutions</h3>
+              <p class="font-normal text-sm leading-sm">
+                Secure and flexible cloud infrastructure for your growth.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative card-service bg-base-50 border-[1px] border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+          >
+            <img
+              src="./public/icons/software.svg"
+              class="h-16 w-16 absolute -top-8"
+            />
+            <div class="text-service flex flex-col gap-1 relative">
+              <h3 class="font-bold text-md leading-md">Software Development</h3>
+              <p class="font-normal text-sm leading-sm">
+                Custom solutions built around your business logic.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative card-service bg-base-50 border-[1px] border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+          >
+            <img
+              src="./public/icons/infrastructure.svg"
+              class="h-16 w-16 absolute -top-8"
+            />
+            <div class="text-service flex flex-col gap-1 relative">
+              <h3 class="font-bold text-md leading-md">IT infrastructure</h3>
+              <p class="font-normal text-sm leading-sm">
+                Scale your backend with reliable tech foundations.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative card-service bg-base-50 border-[1px] border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+          >
+            <img
+              src="./public/icons/security.svg"
+              class="h-16 w-16 absolute -top-8"
+            />
+            <div class="text-service flex flex-col gap-1 relative">
+              <h3 class="font-bold text-md leading-md">
+                Cyberscurity Services
+              </h3>
+              <p class="font-normal text-sm leading-sm">
+                Stay protected with enterprise-grade security.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative card-service bg-base-50 border-[1px] border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+          >
+            <img
+              src="./public/icons/qa.svg"
+              class="h-16 w-16 absolute -top-8"
+            />
+            <div class="text-service flex flex-col gap-1 relative">
+              <h3 class="font-bold text-md leading-md">QA Solutions</h3>
+              <p class="font-normal text-sm leading-sm">
+                Ensure performance with rigorous testing frameworks.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative card-service bg-base-50 border-[1px] border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+          >
+            <img
+              src="./public/icons/service-it-consulting-support.svg"
+              class="h-16 w-16 absolute -top-8"
+            />
+            <div class="text-service flex flex-col gap-1 relative">
+              <h3 class="font-bold text-md leading-md">
+                IT Consulting & Support
+              </h3>
+              <p class="font-normal text-sm leading-sm">
+                Make smarter tech decisions with expert guidance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================== BUILT YOUR INDUSTRY ==================================== -->
+      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 px-4">
+        <div class="flex flex-col gap-[11px]">
+          <h2
+            class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
+          >
+            Built for Your Industry
+          </h2>
+          <p
+            class="font-normal text-sm leading-sm lg:text-xl lg:leading-xl tracking-tight text-base-500"
+          >
+            We’ve helped companies across industries launch smarter, faster, and
+            more securely.
+          </p>
+        </div>
+
+        <!-- CONTENT -->
+
+        <div
+          class="flex flex-col gap-6 lg:flex-row lg:gap-16 lg:justify-between"
+        >
+          <ul class="flex flex-col gap-4 lg:gap-6">
+            <li class="flex items-center gap-1">
+              <img src="./public/icons/li-icon.svg" alt="" class="w-5 h-5" />
+              <span
+                class="text-md leading-md font-bold lg:text-xl lg:leading-xl"
+                >Fintech</span
+              >
+            </li>
+            <li class="flex items-center gap-1">
+              <img src="./public/icons/li-icon.svg" alt="" class="w-5 h-5" />
+              <span
+                class="text-md leading-md font-bold lg:text-xl lg:leading-xl"
+                >Fintech</span
+              >
+            </li>
+            <li class="flex items-center gap-1">
+              <img src="./public/icons/li-icon.svg" alt="" class="w-5 h-5" />
+              <span
+                class="text-md leading-md font-bold lg:text-xl lg:leading-xl"
+                >Fintech</span
+              >
+            </li>
+          </ul>
+
+          <div class="flex flex-col gap-5 max-w-[840px]">
+            <p class="font-normal text-sm leading-sm lg:text-lg lg:leading-lg">
+              We build secure, scalable, and compliant fintech solutions — from
+              digital wallets to core banking systems — tailored to modern
+              financial needs.
+            </p>
+
+            <img
+              src="./public/images/industri-image.png"
+              class="rounded-xl"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================== PORTOFOLIO ==================================== -->
+      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 px-4">
+        <div class="flex flex-col gap-[11px] text-center">
+          <h2
+            class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
+          >
+            From Vision to Launch! Projects We’re Proud Of
+          </h2>
+          <p
+            class="font-normal text-sm leading-sm lg:text-xl lg:leading-xl tracking-tight text-base-500"
+          >
+            Take a closer look at our recent work powering startups,
+            enterprises, and everything in between.
+          </p>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <div class="portofolio-card flex flex-col gap-2 lg:gap-3">
+            <img
+              src="./public/images/portofolio-1.png"
+              alt=""
+              class="w-full max-h-[361px] rounded-2xl"
+            />
+            <div class="">
+              <h4
+                class="text-sm leading-sm font-normal lg:text-md lg:leading-md text-primary"
+              >
+                Landing Page
+              </h4>
+              <h3 class="text-md leading-md font-bold lg:text-xl lg:leading-xl">
+                Portofolio 1
+              </h3>
+            </div>
+          </div>
+
+          <div class="portofolio-card flex flex-col gap-2 lg:gap-3">
+            <img
+              src="./public/images/portofolio-2.png"
+              alt=""
+              class="w-full max-h-[361px] rounded-2xl"
+            />
+            <div class="">
+              <h4
+                class="text-sm leading-sm font-normal lg:text-md lg:leading-md text-primary"
+              >
+                Landing Page
+              </h4>
+              <h3 class="text-md leading-md font-bold lg:text-xl lg:leading-xl">
+                Portofolio 2
+              </h3>
+            </div>
+          </div>
+
+          <div class="portofolio-card flex flex-col gap-2 lg:gap-3">
+            <img
+              src="./public/images/portofolio-3.png"
+              alt=""
+              class="w-full max-h-[361px] rounded-2xl"
+            />
+            <div class="">
+              <h4
+                class="text-sm leading-sm font-normal lg:text-md lg:leading-md text-primary"
+              >
+                Landing Page
+              </h4>
+              <h3 class="text-md leading-md font-bold lg:text-xl lg:leading-xl">
+                Portofolio 3
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================== TESTIMONI ==================================== -->
+
+      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 px-4">
+        <div class="flex flex-col gap-[11px] text-center">
+          <h2
+            class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
+          >
+            What Partners Say About Working With Us
+          </h2>
+          <p
+            class="font-normal text-sm leading-sm lg:text-xl lg:leading-xl tracking-tight text-base-500"
+          >
+            Trusted voices. Real experiences. Proven results.
+          </p>
+        </div>
+        <!-- <div class="carousel-container overflow-x-auto scroll-snap-x mandatory">
+          <ul class="flex">
+            <li class="carousel-slide flex-shrink-0 w-full">Slide 1 Content</li>
+            <li class="carousel-slide flex-shrink-0 w-full">Slide 2 Content</li>
+            <li class="carousel-slide flex-shrink-0 w-full">Slide 3 Content</li>
+          </ul>
+        </div> -->
+
+        <!-- CONTENT -->
+        <div
+          class="carousel-container overflow-visible snap-x snap-mandatory flex"
+        >
+          <div
+            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 border border-base-border overflow-visible text-center relative z-10"
+          >
+            <div class="absolute max-w-16 -top-7 z-50">
+              <img src="./public/icons/quote-icon.svg" alt="quote-icon" />
+            </div>
+
+            <div
+              class="rating-testimoni flex flex-col gap-3 items-center relative"
+            >
+              <img
+                class="max-w-[136px]"
+                src="./public/icons/rating.svg"
+                alt="start-icon"
+              />
+              <div class="testimoni text-sm leading-sm font-semibold">
+                “The team delivered exactly what we needed — on time and with
+                outstanding quality. Their attention to detail and communication
+                were top-notch.”
+              </div>
+            </div>
+
+            <div class="user-testimoni">
+              <p class="font-semibold text-sm leading-sm">Sarah Tan</p>
+              <p class="text-primary font-semibold text-sm leading-sm">
+                Product Manager at Finovate
+              </p>
+            </div>
+
+            <div
+              class="absolute z-50 max-w-[60px] -bottom-6 left-1/2 -translate-x-1/2"
+            >
+              <img
+                src="./public/images/user-testimoni-1.png"
+                alt="user-testimoni-1"
+                class="w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================== SHORT Q&A ==================================== -->
+
+      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 px-4">
+        <div class="flex flex-col gap-4 lg:flex-row lg:justify-between">
+          <h2
+            class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl lg:tracking-tight lg:max-w-[331px]"
+          >
+            Need Help? Start Here.
+          </h2>
+          <p
+            class="font-normal text-sm leading-sm lg:text-xl lg:leading-xl tracking-tight text-base-500 max-w-[243px] lg:self-end"
+          >
+            Everything you need to know — all in one place.
+          </p>
+        </div>
+
+        <hr class="border border-base-border w-full" />
+
+        <!-- ACCORDION AND IMAGE -->
+        <div
+          class="flex flex-col gap-6 lg:flex-row lg:gap-[73px] lg:items-start"
+        >
+          <!-- ACCORDION -->
+          <div class="flex flex-col gap-7 basis-2/3 lg:gap-7">
+            <!-- THE ACCORDION WITH <details> <summary> HTML Tag -->
+            <details
+              class="cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
+            >
+              <summary
+                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−']"
+              >
+                What services do you offer?
+              </summary>
+              <p
+                class="font-normal text-sm leading-sm text-base-500 lg:text-xl lg:leading-xl"
+              >
+                We provide custom web/app development, cloud solutions, UX/UI
+                design, and more.
+              </p>
+            </details>
+            <hr class="border border-base-border w-full" />
+
+            <details
+              class="cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
+            >
+              <summary
+                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−']"
+              >
+                How do I know if this is right for my business?
+              </summary>
+              <p
+                class="font-normal text-sm leading-sm text-base-500 lg:text-xl lg:leading-xl"
+              >
+                We provide custom web/app development, cloud solutions, UX/UI
+                design, and more.
+              </p>
+            </details>
+            <hr class="border border-base-border w-full" />
+
+            <details
+              class="cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
+            >
+              <summary
+                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−']"
+              >
+                How long does it take?
+              </summary>
+              <p
+                class="font-normal text-sm leading-sm text-base-500 lg:text-xl lg:leading-xl"
+              >
+                We provide custom web/app development, cloud solutions, UX/UI
+                design, and more.
+              </p>
+            </details>
+            <hr class="border border-base-border w-full" />
+
+            <details
+              class="cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
+            >
+              <summary
+                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−']"
+              >
+                What services do you offer?
+              </summary>
+              <p
+                class="font-normal text-sm leading-sm text-base-500 lg:text-xl lg:leading-xl"
+              >
+                We provide custom web/app development, cloud solutions, UX/UI
+                design, and more.
+              </p>
+            </details>
+            <hr class="border border-base-border w-full" />
+
+            <details
+              class="cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
+            >
+              <summary
+                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−']"
+              >
+                Can I start with a small project first?
+              </summary>
+              <p
+                class="font-normal text-sm leading-sm text-base-500 lg:text-xl lg:leading-xl"
+              >
+                We provide custom web/app development, cloud solutions, UX/UI
+                design, and more.
+              </p>
+            </details>
+          </div>
+
+          <!-- IMAGE -->
+          <div
+            class="flex flex-col gap-4 rounded-2xl lg:gap-6 lg:p-7 bg-primary-300 text-white p-4"
+          >
+            <div class="flex flex-col gap-1">
+              <h1
+                class="font-bold text-display-sm leading-display-sm tracking-tight lg:text-display-lg lg:leading-display-lg"
+              >
+                Let’s talk it through
+              </h1>
+
+              <p
+                class="font-semibold text-sm leading-sm lg:text-lg lg:leading-lg lg:tracking-normal"
+              >
+                book a free consultation with our team.
+              </p>
+            </div>
+
+            <img
+              src="./public/images/consultation.png"
+              alt="consultation-image"
+              class="w-full rounded-2xl"
+            />
+            <button
+              class="w-full bg-black p-2 rounded-full font-bold text-md leading-md"
+            >
+              Free Consultation
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================== SHORT Q&A ==================================== -->
+
+      <section
+        class="flex flex-col py-10 gap-16 lg:py-20 lg:gap-12 px-4 lg:justify-center lg:items-center"
+      >
+        <div class="flex flex-col gap-6 text-center">
+          <h2
+            class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
+          >
+            Ready to Start? Let’s Talk.
+          </h2>
+          <p
+            class="font-normal text-sm leading-sm lg:text-xl lg:leading-xl tracking-tight text-base-500"
+          >
+            Tell us what you need, and we’ll get back to you soon.
+          </p>
+        </div>
+
+        <!-- INPUT -->
+        <div class="flex flex-col gap-10 lg:w-2/3">
+          <div class="input-item flex flex-col gap-[6px] w-full">
+            <label for="name" class="font-bold text-sm leading-sm">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="w-full border border-base-border py-2 px-4 rounded-xl font-medium text-sm leading-sm"
+            />
+          </div>
+
+          <div class="input-item flex flex-col gap-[6px] w-full">
+            <label for="email" class="font-bold text-sm leading-sm"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="w-full border border-base-border py-2 px-4 rounded-xl font-medium text-sm leading-sm"
+            />
+          </div>
+
+          <!-- TEXTAREA -->
+          <div class="input-item flex flex-col gap-[6px] w-full">
+            <label for="message" class="font-bold text-sm leading-sm"
+              >Message</label
+            >
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter your message"
+              class="w-full border border-base-border py-2 px-4 rounded-xl font-medium text-sm leading-sm h-[134px]"
+            ></textarea>
+          </div>
+
+          <!-- CCHECKBOX -->
+          <div class="input-item flex flex-col gap-[14px] w-full">
+            <label for="services" class="font-bold text-sm leading-sm"
+              >Services</label
+            >
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-[14px]">
+              <label
+                class="inline-flex items-center gap-2 cursor-pointer relative"
+              >
+                <input
+                  type="checkbox"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                  checked
+                />
+                <!-- Custom check icon -->
+                <svg
+                  class="absolute w-5 h-5 text-white hidden peer-checked:block pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span
+                  class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+                  >Web Development</span
+                >
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 cursor-pointer relative"
+              >
+                <input
+                  type="checkbox"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                />
+                <!-- Custom check icon -->
+                <svg
+                  class="absolute w-5 h-5 text-white hidden peer-checked:block pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span
+                  class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+                  >Mobile App Development</span
+                >
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 cursor-pointer relative"
+              >
+                <input
+                  type="checkbox"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                />
+                <!-- Custom check icon -->
+                <svg
+                  class="absolute w-5 h-5 text-white hidden peer-checked:block pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span
+                  class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+                  >UI/UX Design</span
+                >
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 cursor-pointer relative"
+              >
+                <input
+                  type="checkbox"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                />
+                <!-- Custom check icon -->
+                <svg
+                  class="absolute w-5 h-5 text-white hidden peer-checked:block pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span
+                  class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+                  >Cloud Solutions</span
+                >
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 cursor-pointer relative"
+              >
+                <input
+                  type="checkbox"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                />
+                <!-- Custom check icon -->
+                <svg
+                  class="absolute w-5 h-5 text-white hidden peer-checked:block pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span
+                  class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+                  >Software Development</span
+                >
+              </label>
+
+              <label
+                class="inline-flex items-center gap-2 cursor-pointer relative"
+              >
+                <input
+                  type="checkbox"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                />
+                <!-- Custom check icon -->
+                <svg
+                  class="absolute w-5 h-5 text-white hidden peer-checked:block pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+                <span
+                  class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+                  >Others</span
+                >
+              </label>
+            </div>
+          </div>
+
+          <button
+            class="w-full p-2 bg-primary text-white rounded-full font-bold text-sm leading-sm lg:text-md lg:leading-md"
+          >
+            Send
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-6 px-4 md:px-[140px]">
+      <div class="flex flex-col gap-2 px-4 py-6">
+        <div
+          class="flex flex-col gap-6 bg-base-50 border border-base-border rounded-3xl p-5 lg:p-10 lg:gap-[60px]"
+        >
+          <div
+            class="flex flex-col gap-6 justify-start lg:justify-between lg:flex-row-reverse"
+          >
+            <img
+              src="./public/images/light-logo.svg"
+              alt="logo"
+              class="h-8 max-w-[140px] lg:h-9 lg:max-w-[159px]"
+            />
+
+            <h1
+              class="font-bold text-display-sm leading-display-sm lg:text-display-lg lg:leading-display-lg lg:max-w-[281px]"
+            >
+              LET'S DISCUSS YOUR IDEAS
+            </h1>
+          </div>
+
+          <hr class="border border-base-border w-full" />
+
+          <div
+            class="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6"
+          >
+            <ul class="flex flex-col gap-6 lg:flex-row">
+              <li
+                class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+              >
+                About
+              </li>
+              <li
+                class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+              >
+                Services
+              </li>
+              <li
+                class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+              >
+                Project
+              </li>
+              <li
+                class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+              >
+                Testimonial
+              </li>
+              <li
+                class="font-medium text-sm leading-sm lg:text-md lg:leading-md"
+              >
+                FAQ
+              </li>
+            </ul>
+
+            <div class="flex gap-4">
+              <div
+                class="border border-base-border h-10 w-10 rounded-full flex justify-center items-center"
+              >
+                <img
+                  src="./public/icons/facebook-icon.svg"
+                  alt="facebook-icon"
+                  class=""
+                />
+              </div>
+
+              <div
+                class="border border-base-border h-10 w-10 rounded-full flex justify-center items-center"
+              >
+                <img
+                  src="./public/icons/instagram-icon.svg"
+                  alt="instagram-icon.svg"
+                  class=""
+                />
+              </div>
+
+              <div
+                class="border border-base-border h-10 w-10 rounded-full flex justify-center items-center"
+              >
+                <img
+                  src="./public/icons/linkdn-icon.svg"
+                  alt="linkdn-icon.svg"
+                  class=""
+                />
+              </div>
+
+              <div
+                class="border border-base-border h-10 w-10 rounded-full flex justify-center items-center"
+              >
+                <img
+                  src="./public/icons/tiktok-icon.svg"
+                  alt="tiktok-icon.svg"
+                  class=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
