@@ -834,7 +834,9 @@
 
       <!-- ==================================== TESTIMONI ==================================== -->
 
-      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16">
+      <section
+        class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 overflow-hidden"
+      >
         <div class="flex flex-col gap-[11px] text-center">
           <h2
             class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
@@ -847,34 +849,40 @@
             Trusted voices. Real experiences. Proven results.
           </p>
         </div>
-        <!-- <div class="carousel-container overflow-x-auto scroll-snap-x mandatory">
-          <ul class="flex">
-            <li class="carousel-slide flex-shrink-0 w-full">Slide 1 Content</li>
-            <li class="carousel-slide flex-shrink-0 w-full">Slide 2 Content</li>
-            <li class="carousel-slide flex-shrink-0 w-full">Slide 3 Content</li>
-          </ul>
-        </div> -->
 
         <!-- CONTENT -->
         <div
-          class="carousel-container overflow-visible snap-x snap-mandatory flex"
+          id="review-slideshow"
+          class="carousel-container snap-x snap-mandatory flex gap-5 justify-center relative transition-transform duration-500 ease-in-out"
         >
+          <!-- BLUR -->
           <div
-            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 border border-base-border overflow-visible text-center relative z-10"
+            class="hidden lg:block absolute h-[calc(100%+28px)] w-[294px] right-0 top-1/2 -translate-y-1/2 z-20 bg-gradient-to-l from-white to-transparent"
+          ></div>
+
+          <div
+            class="hidden lg:block absolute h-[calc(100%+28px)] w-[294px] left-0 top-1/2 -translate-y-1/2 z-20 bg-gradient-to-r from-white to-transparent"
+          ></div>
+
+          <!-- ============= -->
+          <div
+            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 border border-base-border overflow-visible text-center relative z-10 lg:max-w-[594px] lg:px-6 lg:pt-6 lg:pb-12"
           >
             <div class="absolute max-w-16 -top-7 z-50">
               <img src="./public/icons/quote-icon.svg" alt="quote-icon" />
             </div>
 
             <div
-              class="rating-testimoni flex flex-col gap-3 items-center relative"
+              class="rating-testimoni flex flex-col gap-3 items-center relative lg:gap-4"
             >
               <img
                 class="max-w-[136px]"
                 src="./public/icons/rating.svg"
                 alt="start-icon"
               />
-              <div class="testimoni text-sm leading-sm font-semibold">
+              <div
+                class="testimoni text-sm leading-sm font-semibold lg:text-lg lg:leading-lg"
+              >
                 “The team delivered exactly what we needed — on time and with
                 outstanding quality. Their attention to detail and communication
                 were top-notch.”
@@ -882,9 +890,111 @@
             </div>
 
             <div class="user-testimoni">
-              <p class="font-semibold text-sm leading-sm">Sarah Tan</p>
-              <p class="text-primary font-semibold text-sm leading-sm">
+              <p
+                class="font-semibold text-sm leading-sm lg:text-lg lg:leading-lg"
+              >
+                Sarah Tan
+              </p>
+              <p
+                class="text-primary font-semibold text-sm leading-sm lg:text-lg lg:leading-lg"
+              >
                 Product Manager at Finovate
+              </p>
+            </div>
+
+            <div
+              class="absolute z-50 max-w-[60px] -bottom-6 left-1/2 -translate-x-1/2"
+            >
+              <img
+                src="./public/images/user-testimoni-1.png"
+                alt="user-testimoni-1"
+                class="w-full"
+              />
+            </div>
+          </div>
+
+          <div
+            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 border border-base-border overflow-visible text-center relative z-10 lg:max-w-[594px] lg:px-6 lg:pt-6 lg:pb-12"
+          >
+            <div class="absolute max-w-16 -top-7 z-50">
+              <img src="./public/icons/quote-icon.svg" alt="quote-icon" />
+            </div>
+
+            <div
+              class="rating-testimoni flex flex-col gap-3 items-center relative lg:gap-4"
+            >
+              <img
+                class="max-w-[136px]"
+                src="./public/icons/rating.svg"
+                alt="start-icon"
+              />
+              <div
+                class="testimoni text-sm leading-sm font-semibold lg:text-lg lg:leading-lg"
+              >
+                “The collaboration was seamless, and the results surpassed our
+                expectations. Their expertise transformed our ideas into a
+                successful product.”
+              </div>
+            </div>
+
+            <div class="user-testimoni">
+              <p
+                class="font-semibold text-sm leading-sm lg:text-lg lg:leading-lg"
+              >
+                Emily Chen
+              </p>
+              <p
+                class="text-primary font-semibold text-sm leading-sm lg:text-lg lg:leading-lg"
+              >
+                Marketing Head at Tech Solutions
+              </p>
+            </div>
+
+            <div
+              class="absolute z-50 max-w-[60px] -bottom-6 left-1/2 -translate-x-1/2"
+            >
+              <img
+                src="./public/images/user-testimoni-1.png"
+                alt="user-testimoni-1"
+                class="w-full"
+              />
+            </div>
+          </div>
+
+          <div
+            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 border border-base-border overflow-visible text-center relative z-10 lg:max-w-[594px] lg:max-h-[294px] lg:px-6 lg:pt-6 lg:pb-12"
+          >
+            <div class="absolute max-w-16 -top-7 z-50">
+              <img src="./public/icons/quote-icon.svg" alt="quote-icon" />
+            </div>
+
+            <div
+              class="rating-testimoni flex flex-col gap-3 items-center relative lg:gap-4"
+            >
+              <img
+                class="max-w-[136px]"
+                src="./public/icons/rating.svg"
+                alt="start-icon"
+              />
+              <div
+                class="testimoni text-sm leading-sm font-semibold lg:text-lg lg:leading-lg"
+              >
+                “Working with this team was a game-changer for our project. They
+                understood our vision and turned it into reality efficiently and
+                effectively.”
+              </div>
+            </div>
+
+            <div class="user-testimoni">
+              <p
+                class="font-semibold text-sm leading-sm lg:text-lg lg:leading-lg"
+              >
+                John Lee
+              </p>
+              <p
+                class="text-primary font-semibold text-sm leading-sm lg:text-lg lg:leading-lg"
+              >
+                Creative Director at Innovate Corp
               </p>
             </div>
 
