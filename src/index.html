@@ -61,6 +61,7 @@
             Lets Talk
           </button>
         </div>
+
         <div
           class="relative lg:absolute w-full lg:h-full mt-8 lg:mt-0 right-0 lg:top-0 z-0 lg:w-1/2 overflow-hidden"
         >
@@ -685,36 +686,34 @@
         </div>
 
         <!-- CONTENT -->
-
         <div
           class="flex flex-col gap-6 lg:flex-row lg:gap-16 lg:justify-between"
         >
-          <ul class="flex flex-col gap-4 lg:gap-6">
-            <li class="flex items-center gap-1">
-              <img src="./public/icons/li-icon.svg" alt="" class="w-5 h-5" />
-              <span
-                class="text-md leading-md font-bold lg:text-xl lg:leading-xl"
-                >Fintech</span
-              >
-            </li>
-            <li class="flex items-center gap-1">
-              <img src="./public/icons/li-icon.svg" alt="" class="w-5 h-5" />
-              <span
-                class="text-md leading-md font-bold lg:text-xl lg:leading-xl"
-                >Fintech</span
-              >
-            </li>
-            <li class="flex items-center gap-1">
-              <img src="./public/icons/li-icon.svg" alt="" class="w-5 h-5" />
-              <span
-                class="text-md leading-md font-bold lg:text-xl lg:leading-xl"
-                >Fintech</span
-              >
-            </li>
-          </ul>
+          <div class="flex flex-col gap-4 lg:gap-6 basis-1/4">
+            <button
+              class="tab-button text-md leading-md font-bold lg:text-xl lg:leading-xl text-start border-l-5 border-base-400 pl-2 text-base-400"
+              data-tab="tab1"
+            >
+              Fintech
+            </button>
+            <button
+              class="tab-button text-md leading-md font-bold lg:text-xl lg:leading-xl text-start border-l-5 border-base-400 pl-2 text-base-400"
+              data-tab="tab2"
+            >
+              E-Commerce
+            </button>
+            <button
+              class="tab-button text-md leading-md font-bold lg:text-xl lg:leading-xl text-start border-l-5 border-base-400 pl-2 text-base-400"
+              data-tab="tab3"
+            >
+              Healtcare
+            </button>
+          </div>
 
-          <div class="flex flex-col gap-5 max-w-[840px]">
-            <p class="font-normal text-sm leading-sm lg:text-lg lg:leading-lg">
+          <div id="tab1" class="tab-content max-w-[840px] basis-3/4">
+            <p
+              class="font-normal text-sm leading-sm lg:text-lg lg:leading-lg mb-5"
+            >
               We build secure, scalable, and compliant fintech solutions — from
               digital wallets to core banking systems — tailored to modern
               financial needs.
@@ -722,7 +721,37 @@
 
             <img
               src="./public/images/industri-image.png"
-              class="rounded-xl"
+              class="rounded-xl w-full"
+              alt=""
+            />
+          </div>
+          <div id="tab2" class="tab-content hidden">
+            <p
+              class="font-normal text-sm leading-sm lg:text-lg lg:leading-lg mb-5"
+            >
+              Boost your online sales with fast, reliable platforms designed for
+              seamless shopping experiences, inventory management, and payment
+              integration.
+            </p>
+
+            <img
+              src="./public/images/industri-image-2.png"
+              class="rounded-xl w-full"
+              alt=""
+            />
+          </div>
+          <div id="tab3" class="tab-content hidden">
+            <p
+              class="font-normal text-sm leading-sm lg:text-lg lg:leading-lg mb-5"
+            >
+              We build secure, scalable, and compliant fintech solutions — from
+              digital wallets to core banking systems — tailored to modern
+              financial needs.
+            </p>
+
+            <img
+              src="./public/images/industri-image-3.png"
+              class="rounded-xl w-full"
               alt=""
             />
           </div>
@@ -1325,5 +1354,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
