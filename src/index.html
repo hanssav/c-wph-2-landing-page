@@ -15,7 +15,11 @@
       class="sticky top-0 backdrop-blur-2xl z-60 backdrop:blur-2xl flex justify-between items-center py-6 px-4 md:px-[140px]"
     >
       <div class="">
-        <img src="./public/images/light-logo.svg" alt="logo" class="" />
+        <img
+          src="./public/images/light-logo.svg"
+          alt="logo"
+          class="h-[36px] w-[159px]"
+        />
       </div>
       <nav class="hidden md:inline">
         <ul class="flex gap-3 text-base font-semibold items-center">
@@ -36,8 +40,8 @@
       </div>
     </header>
 
-    <main class="py-6 px-4 md:px-[140px]">
-      <section class="h-[747px] lg:flex w-full items-center">
+    <main class="py-6 px-4 lg:px-[140px]">
+      <section class="py-6 lg:h-[747px] lg:flex items-center">
         <div class="flex flex-col gap-10 lg:w-[653px] z-50">
           <div class="flex flex-col gap-2">
             <h1
@@ -57,19 +61,30 @@
             Lets Talk
           </button>
         </div>
-        <div class="absolute w-full mt-8 lg:mt-0 right-0 lg:top-0 z-0 lg:w-1/2">
-          <div class="relative h-[391px] lg:h-full w-full">
+        <div
+          class="relative lg:absolute w-full lg:h-full mt-8 lg:mt-0 right-0 lg:top-0 z-0 lg:w-1/2 overflow-hidden"
+        >
+          <div class="relative lg:min-h-[747px] w-full lg:min-w-[747px]">
             <img
-              class="w-full h-auto object-cover"
+              class="w-full lg:h-full"
               src="./public/images/hero-img.svg"
               alt="hero-images"
             />
-            <!-- ======================NEED TO ADJUST WIDTH  -->
+
+            <!-- TRANSPARENT -->
             <div
-              class="absolute bottom-0 left-0 w-1/2 h-full bg-gradient-to-r from-white to-transparent z-30"
+              class="absolute bottom-0 left-0 w-1/4 lg:1/2 h-full bg-gradient-to-r from-white to-transparent z-30"
             ></div>
             <div
-              class="absolute bottom-0 right-0 w-full lg:h-[200px] bg-gradient-to-t from-white to-transparent z-30"
+              class="absolute bottom-0 right-0 w-full h-1/4 lg:h-[200px] bg-gradient-to-t from-white to-transparent z-30"
+            ></div>
+
+            <!-- MOBILE VIEW -->
+            <div
+              class="lg:hidden absolute bottom-0 right-0 w-1/4 h-full bg-gradient-to-l from-white to-transparent z-30"
+            ></div>
+            <div
+              class="lg:hidden absolute top-0 right-0 h-1/4 w-full bg-gradient-to-b from-white to-transparent z-30"
             ></div>
           </div>
         </div>
@@ -103,13 +118,13 @@
             <img
               src="./public/images/company-logo-zoom.svg"
               alt=""
-              class="filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
             />
           </div>
           <div class="company-logo">
             <img
               src="./public/images/company-logo-postman.svg"
-              class="filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
               alt=""
             />
           </div>
@@ -160,6 +175,7 @@
         </div>
       </section>
 
+      <!-- =================== END TO END IT ===================== -->
       <section class="flex flex-col py-20 px-4 gap-6 lg:gap-16">
         <div class="text-center flex flex-col gap-[11px]">
           <h2
@@ -173,12 +189,13 @@
           </p>
         </div>
 
+        <!-- CONTENT -->
         <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5 text-center">
           <div
-            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-[#FAFAFA] border-[1px] border-[#DEDCDC] rounded-full aspect-[1/1]"
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 border-[1px] border-base-border rounded-full aspect-[1/1]"
           >
             <h1
-              class="text-primary font-bold text-4xl lg:text-5xl lg:leading-[60px] leading-11"
+              class="text-primary font-bold text-4xl lg:text-display-2xl lg:leading-[60px] leading-11"
             >
               50+
             </h1>
@@ -190,10 +207,10 @@
           </div>
 
           <div
-            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-[#FAFAFA] border-[1px] border-[#DEDCDC] rounded-full aspect-[1/1]"
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 border-[1px] border-base-border rounded-full aspect-[1/1]"
           >
             <h1
-              class="text-primary font-bold text-4xl lg:text-5xl lg:leading-[60px] leading-11"
+              class="text-primary font-bold text-4xl lg:text-display-2xl lg:leading-[60px] leading-11"
             >
               5+
             </h1>
@@ -205,10 +222,10 @@
           </div>
 
           <div
-            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-[#FAFAFA] border-[1px] border-[#DEDCDC] rounded-full aspect-[1/1]"
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 border-[1px] border-base-border rounded-full aspect-[1/1]"
           >
             <h1
-              class="text-primary font-bold text-4xl lg:text-5xl lg:leading-[60px] leading-11"
+              class="text-primary font-bold text-4xl lg:text-display-2xl lg:leading-[60px] leading-11"
             >
               10+
             </h1>
@@ -220,10 +237,10 @@
           </div>
 
           <div
-            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-[#FAFAFA] border-[1px] border-[#DEDCDC] rounded-full aspect-[1/1]"
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 border-[1px] border-base-border rounded-full aspect-[1/1]"
           >
             <h1
-              class="text-primary font-bold text-4xl lg:text-5xl lg:leading-[60px] leading-11"
+              class="text-primary font-bold text-4xl lg:text-display-2xl lg:leading-[60px] leading-11"
             >
               100%
             </h1>
@@ -237,7 +254,7 @@
       </section>
 
       <!-- OUR PROCESS -->
-      <section class="flex flex-col gap-6 py-10 lg:py-20 lg:gap-16 px-4">
+      <section class="flex flex-col gap-6 py-10 lg:py-20 lg:gap-16">
         <div class="flex flex-col gap-[11px] text-center">
           <h2
             class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
@@ -267,23 +284,30 @@
             <div
               class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
             >
-              <div>
-                <h3
-                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+              <details class="cursor-pointer group w-full">
+                <summary
+                  class="flex justify-between font-bold text-md leading-md lg:text-xl lg:leading-xl"
                 >
                   Discovery & Consultation
-                </h3>
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-up"
+                    class="w-6 h-6 hidden group-open:block"
+                  />
+
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-down"
+                    class="w-6 h-6 group-open:hidden group- rotate-180"
+                  />
+                </summary>
+
                 <p
                   class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
                 >
                   Understand Your Needs & Goals
                 </p>
-              </div>
-              <img
-                class="absolute right-4 h-6 w-6"
-                src="./public/icons/chevron-up.svg"
-                alt=""
-              />
+              </details>
             </div>
           </div>
 
@@ -299,23 +323,29 @@
             <div
               class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
             >
-              <div>
-                <h3
-                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+              <details class="cursor-pointer group w-full">
+                <summary
+                  class="flex justify-between font-bold text-md leading-md lg:text-xl lg:leading-xl"
                 >
                   Planning & Strategy
-                </h3>
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-up"
+                    class="w-6 h-6 hidden group-open:block"
+                  />
+
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-down"
+                    class="w-6 h-6 group-open:hidden group- rotate-180"
+                  />
+                </summary>
                 <p
                   class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
                 >
                   Build a Clear, Scalable Roadmap
                 </p>
-              </div>
-              <img
-                class="absolute right-4 h-6 w-6"
-                src="./public/icons/chevron-up.svg"
-                alt=""
-              />
+              </details>
             </div>
           </div>
 
@@ -331,23 +361,30 @@
             <div
               class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
             >
-              <div>
-                <h3
-                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+              <details class="cursor-pointer group w-full">
+                <summary
+                  class="flex justify-between font-bold text-md leading-md lg:text-xl lg:leading-xl"
                 >
                   Design & Prototyping
-                </h3>
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-up"
+                    class="w-6 h-6 hidden group-open:block"
+                  />
+
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-down"
+                    class="w-6 h-6 group-open:hidden group- rotate-180"
+                  />
+                </summary>
+
                 <p
                   class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
                 >
                   Craft UX That Converts
                 </p>
-              </div>
-              <img
-                class="absolute right-4 h-6 w-6"
-                src="./public/icons/chevron-up.svg"
-                alt=""
-              />
+              </details>
             </div>
           </div>
 
@@ -363,23 +400,30 @@
             <div
               class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
             >
-              <div>
-                <h3
-                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+              <details class="cursor-pointer group w-full">
+                <summary
+                  class="flex justify-between font-bold text-md leading-md lg:text-xl lg:leading-xl"
                 >
                   Development & Implementation
-                </h3>
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-up"
+                    class="w-6 h-6 hidden group-open:block"
+                  />
+
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-down"
+                    class="w-6 h-6 group-open:hidden group- rotate-180"
+                  />
+                </summary>
+
                 <p
                   class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
                 >
                   Deliver With Speed & Precision
                 </p>
-              </div>
-              <img
-                class="absolute right-4 h-6 w-6"
-                src="./public/icons/chevron-up.svg"
-                alt=""
-              />
+              </details>
             </div>
           </div>
 
@@ -395,23 +439,30 @@
             <div
               class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
             >
-              <div>
-                <h3
-                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+              <details class="cursor-pointer group w-full">
+                <summary
+                  class="flex justify-between font-bold text-md leading-md lg:text-xl lg:leading-xl"
                 >
                   Testing & Optimization
-                </h3>
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-up"
+                    class="w-6 h-6 hidden group-open:block"
+                  />
+
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-down"
+                    class="w-6 h-6 group-open:hidden group- rotate-180"
+                  />
+                </summary>
+
                 <p
                   class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
                 >
                   Ensure Quality at Every Step
                 </p>
-              </div>
-              <img
-                class="absolute right-4 h-6 w-6"
-                src="./public/icons/chevron-up.svg"
-                alt=""
-              />
+              </details>
             </div>
           </div>
 
@@ -427,23 +478,30 @@
             <div
               class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
             >
-              <div>
-                <h3
-                  class="font-bold text-md leading-md lg:text-xl lg:leading-xl"
+              <details class="cursor-pointer group w-full">
+                <summary
+                  class="flex justify-between font-bold text-md leading-md lg:text-xl lg:leading-xl"
                 >
                   Scale, Measure & Improve Continuously
-                </h3>
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-up"
+                    class="w-6 h-6 hidden group-open:block"
+                  />
+
+                  <img
+                    src="./public/icons/chevron-up.svg"
+                    alt="chevron-down"
+                    class="w-6 h-6 group-open:hidden group- rotate-180"
+                  />
+                </summary>
+
                 <p
                   class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
                 >
                   Scale, Measure & Improve Continuously
                 </p>
-              </div>
-              <img
-                class="absolute right-4 h-6 w-6"
-                src="./public/icons/chevron-up.svg"
-                alt=""
-              />
+              </details>
             </div>
           </div>
         </div>
@@ -451,7 +509,7 @@
 
       <!-- ==================================== SMART IT ==================================== -->
 
-      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 px-4">
+      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16">
         <div class="flex flex-col gap-[11px] text-center">
           <h2
             class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
@@ -611,7 +669,7 @@
       </section>
 
       <!-- ==================================== BUILT YOUR INDUSTRY ==================================== -->
-      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 px-4">
+      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16">
         <div class="flex flex-col gap-[11px]">
           <h2
             class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
@@ -672,7 +730,7 @@
       </section>
 
       <!-- ==================================== PORTOFOLIO ==================================== -->
-      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 px-4">
+      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16">
         <div class="flex flex-col gap-[11px] text-center">
           <h2
             class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
@@ -747,7 +805,7 @@
 
       <!-- ==================================== TESTIMONI ==================================== -->
 
-      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 px-4">
+      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16">
         <div class="flex flex-col gap-[11px] text-center">
           <h2
             class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
@@ -816,7 +874,7 @@
 
       <!-- ==================================== SHORT Q&A ==================================== -->
 
-      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 px-4">
+      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16">
         <div class="flex flex-col gap-4 lg:flex-row lg:justify-between">
           <h2
             class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl lg:tracking-tight lg:max-w-[331px]"
@@ -959,7 +1017,7 @@
       <!-- ==================================== SHORT Q&A ==================================== -->
 
       <section
-        class="flex flex-col py-10 gap-16 lg:py-20 lg:gap-12 px-4 lg:justify-center lg:items-center"
+        class="flex flex-col py-10 gap-16 lg:py-20 lg:gap-12 lg:justify-center lg:items-center"
       >
         <div class="flex flex-col gap-6 text-center">
           <h2
@@ -1169,7 +1227,7 @@
     </main>
 
     <footer class="py-6 px-4 md:px-[140px]">
-      <div class="flex flex-col gap-2 px-4 py-6">
+      <div class="flex flex-col gap-2 py-6">
         <div
           class="flex flex-col gap-6 bg-base-50 border border-base-border rounded-3xl p-5 lg:p-10 lg:gap-[60px]"
         >
