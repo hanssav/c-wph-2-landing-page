@@ -1410,11 +1410,6 @@
       color: var(--color-base-400);
     }
   }
-  .dark\:text-base-600 {
-    &:where([data-theme=dark], [data-theme=dark] *) {
-      color: var(--color-base-600);
-    }
-  }
   .dark\:text-dark {
     &:where([data-theme=dark], [data-theme=dark] *) {
       color: var(--color-dark);
