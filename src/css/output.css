@@ -66,6 +66,8 @@
     --color-base-50: #fafafa;
     --color-base-400: #a4a7ae;
     --color-base-500: #717680;
+    --color-base-800: #252b37;
+    --color-base-950: #0a0d12;
     --color-base-border: #dedcdc;
   }
 }
@@ -319,6 +321,9 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
@@ -1368,14 +1373,56 @@
       letter-spacing: var(--tracking-tight);
     }
   }
+  .dark\:block {
+    &:where(.dark, .dark *) {
+      display: block;
+    }
+  }
+  .dark\:hidden {
+    &:where(.dark, .dark *) {
+      display: none;
+    }
+  }
+  .dark\:border-base-800 {
+    &:where(.dark, .dark *) {
+      border-color: var(--color-base-800);
+    }
+  }
+  .dark\:bg-base-950 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-base-950);
+    }
+  }
   .dark\:bg-black {
     &:where(.dark, .dark *) {
       background-color: var(--color-black);
     }
   }
+  .dark\:from-black {
+    &:where(.dark, .dark *) {
+      --tw-gradient-from: var(--color-black);
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+  }
+  .dark\:text-base-400 {
+    &:where(.dark, .dark *) {
+      color: var(--color-base-400);
+    }
+  }
   .dark\:text-dark {
     &:where(.dark, .dark *) {
       color: var(--color-dark);
+    }
+  }
+  .dark\:text-white {
+    &:where(.dark, .dark *) {
+      color: var(--color-white);
+    }
+  }
+  .dark\:brightness-90 {
+    &:where(.dark, .dark *) {
+      --tw-brightness: brightness(90%);
+      filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
     }
   }
 }

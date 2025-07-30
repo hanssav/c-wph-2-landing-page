@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Toogle Menu
-
   const toggleBtn = document.getElementById('menu-toggle');
   const menuIcon = document.getElementById('menu-icon');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -11,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isOpen) {
       mobileMenu.classList.remove('hidden');
       menuIcon.src = './public/icons/x-icon.svg'; // icon "X"
-      document.body.classList.add('no-scroll');
+      document.body.classList.add('overflow-y-hidden');
     } else {
       mobileMenu.classList.add('hidden');
-      menuIcon.src = './public/icons/menu.svg'; // hamburger
-      document.body.classList.remove('no-scroll');
+      menuIcon.src = './public/icons/hamburger.svg'; // hamburger
+      document.body.classList.remove('overflow-y-hidden');
     }
   };
 

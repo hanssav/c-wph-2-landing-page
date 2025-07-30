@@ -18,9 +18,16 @@
         <img
           src="./public/images/light-logo.svg"
           alt="logo"
-          class="h-[36px] w-[159px]"
+          class="h-[36px] w-[159px] block dark:hidden"
+        />
+
+        <img
+          src="./public/images/logo-dark.svg"
+          alt="logo"
+          class="h-[36px] w-[159px] hidden dark:block"
         />
       </div>
+
       <nav class="hidden md:inline">
         <ul class="flex gap-3 text-base font-semibold items-center">
           <li>About</li>
@@ -37,13 +44,24 @@
       </div>
 
       <div class="md:hidden" id="menu-toggle">
-        <img src="./public/icons/menu.svg" alt="menu-icon" id="menu-icon" />
+        <img
+          src="./public/icons/hamburger.svg"
+          alt="menu-icon"
+          id="menu-icon"
+          class="dark:hidden"
+        />
+        <img
+          src="./public/icons/hamburger-dark.svg"
+          alt="menu-icon"
+          id="menu-icon"
+          class="hidden dark:block"
+        />
       </div>
     </header>
     <!-- Mobile Menu (Hidden by Default) -->
     <nav
       id="mobile-menu"
-      class="fixed right-0 top-16 z-50 h-screen w-full bg-white px-4 py-6 hidden overflow-y-hidden"
+      class="fixed right-0 top-16 z-50 h-screen w-full bg-white dark:bg-black dark:text-white px-4 py-6 hidden overflow-y-hidden"
       aria-label="Mobile Navigation"
     >
       <ul class="flex flex-col gap-5 mt-4">
@@ -87,25 +105,30 @@
         >
           <div class="relative lg:min-h-[747px] w-full lg:min-w-[747px]">
             <img
-              class="w-full lg:h-full"
+              class="w-full lg:h-full dark:hidden"
               src="./public/images/hero-img.svg"
+              alt="hero-images"
+            />
+            <img
+              class="w-full lg:h-full hidden dark:block"
+              src="./public/images/hero-img-dark.png"
               alt="hero-images"
             />
 
             <!-- TRANSPARENT -->
             <div
-              class="absolute bottom-0 left-0 w-1/4 lg:1/2 h-full bg-gradient-to-r from-white to-transparent z-30"
+              class="absolute bottom-0 left-0 w-1/4 lg:1/2 h-full bg-gradient-to-r from-white dark:from-black to-transparent z-30"
             ></div>
             <div
-              class="absolute bottom-0 right-0 w-full h-1/4 lg:h-[200px] bg-gradient-to-t from-white to-transparent z-30"
+              class="absolute bottom-0 right-0 w-full h-1/4 lg:h-[200px] bg-gradient-to-t from-white dark:from-black to-transparent z-30"
             ></div>
 
             <!-- MOBILE VIEW -->
             <div
-              class="lg:hidden absolute bottom-0 right-0 w-1/4 h-full bg-gradient-to-l from-white to-transparent z-30"
+              class="lg:hidden absolute bottom-0 right-0 w-1/4 h-full bg-gradient-to-l from-white dark:from-black to-transparent z-30"
             ></div>
             <div
-              class="lg:hidden absolute top-0 right-0 h-1/4 w-full bg-gradient-to-b from-white to-transparent z-30"
+              class="lg:hidden absolute top-0 right-0 h-1/4 w-full bg-gradient-to-b from-white dark:from-black to-transparent z-30"
             ></div>
           </div>
         </div>
@@ -123,14 +146,14 @@
         >
           <div class="company-logo bg-[#707070]">
             <img
-              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 dark:brightness-90 opacity-70"
               src="./public/images/company-logo-adobe.svg"
               alt=""
             />
           </div>
           <div class="company-logo">
             <img
-              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 dark:brightness-90 opacity-70"
               src="./public/images/company-logo-upwork.svg"
               alt=""
             />
@@ -139,47 +162,47 @@
             <img
               src="./public/images/company-logo-zoom.svg"
               alt=""
-              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 dark:brightness-90 opacity-70"
             />
           </div>
           <div class="company-logo">
             <img
               src="./public/images/company-logo-postman.svg"
-              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 dark:brightness-90 opacity-70"
               alt=""
             />
           </div>
           <div class="company-logo">
             <img
-              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 dark:brightness-90 opacity-70"
               src="./public/images/company-logo-databricks.svg"
               alt=""
             />
           </div>
           <div class="company-logo">
             <img
-              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 dark:brightness-90 opacity-70"
               src="./public/images/company-logo-airbnb.svg"
               alt=""
             />
           </div>
           <div class="company-logo">
             <img
-              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 dark:brightness-90 opacity-70"
               src="./public/images/company-logo-dropbox.svg"
               alt=""
             />
           </div>
           <div class="company-logo">
             <img
-              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 dark:brightness-90 opacity-70"
               src="./public/images/company-logo-paypal.svg"
               alt=""
             />
           </div>
           <div class="company-logo">
             <img
-              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 opacity-70"
+              class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 dark:brightness-90 opacity-70"
               src="./public/images/company-logo-netflix.svg"
               alt=""
             />
@@ -187,11 +210,11 @@
 
           <!-- blur card -->
           <div
-            class="blur-card absolute w-[45.55px] h-[98px] lg:w-[260px] lg:h-[200px] left-0 lg:-left-[5px] top-2 bg-gradient-to-r from-white from-[89.71%] lg:from-[50%] to-[36.1%] to-transparent"
+            class="blur-card absolute w-[45.55px] h-[98px] lg:w-[260px] lg:h-[200px] left-0 lg:-left-[5px] top-2 bg-gradient-to-r from-white dark:from-black from-[89.71%] lg:from-[50%] to-[36.1%] to-transparent"
           ></div>
 
           <div
-            class="blur-card absolute w-[45.55px] h-[98px] lg:w-[260px] lg:h-[200px] right-0 top-2 lg:-right-[5px] bg-gradient-to-r from-white from-[89.71%] lg:from-[50%] to-[36.1%] to-transparent rotate-180"
+            class="blur-card absolute w-[45.55px] h-[98px] lg:w-[260px] lg:h-[200px] right-0 top-2 lg:-right-[5px] bg-gradient-to-r from-white dark:from-black from-[89.71%] lg:from-[50%] to-[36.1%] to-transparent rotate-180"
           ></div>
         </div>
       </section>
@@ -204,7 +227,9 @@
           >
             End-to-End IT Solutions That Drive Results
           </h2>
-          <p class="font-medium leading-7 lg:text-lg lg:leading-9">
+          <p
+            class="font-medium leading-7 lg:text-lg lg:leading-9 dark:text-base-400"
+          >
             From strategy to execution, we deliver solutions that grow your
             business.
           </p>
@@ -213,7 +238,7 @@
         <!-- CONTENT -->
         <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-5 text-center">
           <div
-            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 border border-base-border rounded-full aspect-[1/1]"
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 rounded-full aspect-[1/1]"
           >
             <h1
               class="text-primary font-bold text-4xl lg:text-display-2xl lg:leading-[60px] leading-11"
@@ -228,7 +253,7 @@
           </div>
 
           <div
-            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 border border-base-border rounded-full aspect-[1/1]"
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 rounded-full aspect-[1/1]"
           >
             <h1
               class="text-primary font-bold text-4xl lg:text-display-2xl lg:leading-[60px] leading-11"
@@ -243,7 +268,7 @@
           </div>
 
           <div
-            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 border border-base-border rounded-full aspect-[1/1]"
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 rounded-full aspect-[1/1]"
           >
             <h1
               class="text-primary font-bold text-4xl lg:text-display-2xl lg:leading-[60px] leading-11"
@@ -258,7 +283,7 @@
           </div>
 
           <div
-            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 border border-base-border rounded-full aspect-[1/1]"
+            class="p-4 flex flex-col gap-[6px] items-center justify-center bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 rounded-full aspect-[1/1]"
           >
             <h1
               class="text-primary font-bold text-4xl lg:text-display-2xl lg:leading-[60px] leading-11"
@@ -282,7 +307,9 @@
           >
             Our Process
           </h2>
-          <p class="font-normal text-sm leading-sm lg:text-xl lg:leading-xl">
+          <p
+            class="font-normal text-sm leading-sm lg:text-xl lg:leading-xl dark:text-base-400"
+          >
             Clear steps. Smart execution. Results you can count on.
           </p>
         </div>
@@ -290,7 +317,7 @@
         <div class="relative flex flex-col gap-4">
           <!-- Vertical Line -->
           <div
-            class="absolute z-0 border-r-[1px] border-base-border h-[calc(100%-94px)] left-[calc(40px/2)] lg:left-[calc(100vw/2-140px)] top-8"
+            class="absolute z-0 border-r-[1px] border-base-border dark:border-base-800 h-[calc(100%-94px)] left-[calc(40px/2)] lg:left-[calc(100vw/2-140px)] top-8"
           ></div>
 
           <div class="flex gap-4 items-center w-full lg:relative">
@@ -303,7 +330,7 @@
 
             <!-- Accordion -->
             <div
-              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 dark:bg-base-950 dark:border-base-800 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
             >
               <details class="cursor-pointer group w-full">
                 <summary
@@ -324,7 +351,7 @@
                 </summary>
 
                 <p
-                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md dark:text-base-400"
                 >
                   Understand Your Needs & Goals
                 </p>
@@ -342,7 +369,7 @@
 
             <!-- Accordion -->
             <div
-              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 dark:bg-base-950 dark:border-base-800 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
             >
               <details class="cursor-pointer group w-full">
                 <summary
@@ -362,7 +389,7 @@
                   />
                 </summary>
                 <p
-                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md dark:text-base-400"
                 >
                   Build a Clear, Scalable Roadmap
                 </p>
@@ -380,7 +407,7 @@
 
             <!-- Accordion -->
             <div
-              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 dark:bg-base-950 dark:border-base-800 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
             >
               <details class="cursor-pointer group w-full">
                 <summary
@@ -401,7 +428,7 @@
                 </summary>
 
                 <p
-                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md dark:text-base-400"
                 >
                   Craft UX That Converts
                 </p>
@@ -419,7 +446,7 @@
 
             <!-- Accordion -->
             <div
-              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 dark:bg-base-950 dark:border-base-800 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
             >
               <details class="cursor-pointer group w-full">
                 <summary
@@ -440,7 +467,7 @@
                 </summary>
 
                 <p
-                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md dark:text-base-400"
                 >
                   Deliver With Speed & Precision
                 </p>
@@ -458,7 +485,7 @@
 
             <!-- Accordion -->
             <div
-              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 dark:bg-base-950 dark:border-base-800 p-4 lg:p-6 justify-between lg:flex-none lg:basis-48/100"
             >
               <details class="cursor-pointer group w-full">
                 <summary
@@ -479,7 +506,7 @@
                 </summary>
 
                 <p
-                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md dark:text-base-400"
                 >
                   Ensure Quality at Every Step
                 </p>
@@ -497,7 +524,7 @@
 
             <!-- Accordion -->
             <div
-              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
+              class="relative grow flex w-full rounded-2xl border-base-border bg-base-50 dark:bg-base-950 dark:border-base-800 p-4 lg:p-6 justify-between lg:flex-none lg:basis-45/100"
             >
               <details class="cursor-pointer group w-full">
                 <summary
@@ -518,7 +545,7 @@
                 </summary>
 
                 <p
-                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md"
+                  class="font-normal text-sm leading-sm lg:text-md lg:leading-md dark:text-base-400"
                 >
                   Scale, Measure & Improve Continuously
                 </p>
@@ -547,7 +574,7 @@
         <!-- SERIVICE ROW -->
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
           <div
-            class="relative card-service bg-base-50 border border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+            class="relative card-service bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 py-12 px-5 flex flex-col gap-5 rounded-2xl"
           >
             <img
               src="./public/icons/web.svg"
@@ -562,7 +589,7 @@
           </div>
 
           <div
-            class="relative card-service bg-base-50 border border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+            class="relative card-service bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 py-12 px-5 flex flex-col gap-5 rounded-2xl"
           >
             <img
               src="./public/icons/mobile-app.svg"
@@ -579,7 +606,7 @@
           </div>
 
           <div
-            class="relative card-service bg-base-50 border border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+            class="relative card-service bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 py-12 px-5 flex flex-col gap-5 rounded-2xl"
           >
             <img
               src="./public/icons/ui.svg"
@@ -594,7 +621,7 @@
           </div>
 
           <div
-            class="relative card-service bg-base-50 border border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+            class="relative card-service bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 py-12 px-5 flex flex-col gap-5 rounded-2xl"
           >
             <img
               src="./public/icons/cloud.svg"
@@ -609,7 +636,7 @@
           </div>
 
           <div
-            class="relative card-service bg-base-50 border border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+            class="relative card-service bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 py-12 px-5 flex flex-col gap-5 rounded-2xl"
           >
             <img
               src="./public/icons/software.svg"
@@ -624,7 +651,7 @@
           </div>
 
           <div
-            class="relative card-service bg-base-50 border border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+            class="relative card-service bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 py-12 px-5 flex flex-col gap-5 rounded-2xl"
           >
             <img
               src="./public/icons/infrastructure.svg"
@@ -639,7 +666,7 @@
           </div>
 
           <div
-            class="relative card-service bg-base-50 border border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+            class="relative card-service bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 py-12 px-5 flex flex-col gap-5 rounded-2xl"
           >
             <img
               src="./public/icons/security.svg"
@@ -656,7 +683,7 @@
           </div>
 
           <div
-            class="relative card-service bg-base-50 border border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+            class="relative card-service bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 py-12 px-5 flex flex-col gap-5 rounded-2xl"
           >
             <img
               src="./public/icons/qa.svg"
@@ -671,7 +698,7 @@
           </div>
 
           <div
-            class="relative card-service bg-base-50 border border-base-border py-12 px-5 flex flex-col gap-5 rounded-2xl"
+            class="relative card-service bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 py-12 px-5 flex flex-col gap-5 rounded-2xl"
           >
             <img
               src="./public/icons/service-it-consulting-support.svg"
@@ -859,11 +886,11 @@
       >
         <!-- BLUR -->
         <div
-          class="hidden lg:block absolute h-[calc(100%+28px)] w-[294px] right-0 top-1/2 -translate-y-1/2 z-20 bg-gradient-to-l from-white to-transparent"
+          class="hidden lg:block absolute h-[calc(100%+28px)] w-[294px] right-0 top-1/2 -translate-y-1/2 z-20 bg-gradient-to-l from-white dark:from-black to-transparent"
         ></div>
 
         <div
-          class="hidden lg:block absolute h-[calc(100%+28px)] w-[294px] left-0 top-1/2 -translate-y-1/2 z-20 bg-gradient-to-r from-white to-transparent"
+          class="hidden lg:block absolute h-[calc(100%+28px)] w-[294px] left-0 top-1/2 -translate-y-1/2 z-20 bg-gradient-to-r from-white dark:from-black to-transparent"
         ></div>
 
         <!-- Title Desc -->
@@ -887,7 +914,7 @@
         >
           <!-- ============= -->
           <div
-            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 border border-base-border overflow-visible text-center relative z-10 lg:max-w-[594px] lg:px-6 lg:pt-6 lg:pb-12"
+            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 overflow-visible text-center relative z-10 lg:max-w-[594px] lg:px-6 lg:pt-6 lg:pb-12"
           >
             <div class="absolute max-w-16 -top-7 z-50">
               <img src="./public/icons/quote-icon.svg" alt="quote-icon" />
@@ -935,7 +962,7 @@
           </div>
 
           <div
-            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 border border-base-border overflow-visible text-center relative z-10 lg:max-w-[594px] lg:px-6 lg:pt-6 lg:pb-12"
+            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 overflow-visible text-center relative z-10 lg:max-w-[594px] lg:px-6 lg:pt-6 lg:pb-12"
           >
             <div class="absolute max-w-16 -top-7 z-50">
               <img src="./public/icons/quote-icon.svg" alt="quote-icon" />
@@ -983,7 +1010,7 @@
           </div>
 
           <div
-            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 border border-base-border overflow-visible text-center relative z-10 lg:max-w-[594px] lg:max-h-[294px] lg:px-6 lg:pt-6 lg:pb-12"
+            class="carousel-slide flex-shrink-0 w-full flex flex-col gap-4 px-4 pt-4 pb-12 rounded-2xl bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 overflow-visible text-center relative z-10 lg:max-w-[594px] lg:max-h-[294px] lg:px-6 lg:pt-6 lg:pb-12"
           >
             <div class="absolute max-w-16 -top-7 z-50">
               <img src="./public/icons/quote-icon.svg" alt="quote-icon" />
@@ -1048,7 +1075,7 @@
           </p>
         </div>
 
-        <hr class="border border-base-border w-full" />
+        <hr class="border border-base-border dark:border-base-800 w-full" />
 
         <!-- ACCORDION AND IMAGE -->
         <div
@@ -1058,10 +1085,10 @@
           <div class="flex flex-col gap-7 basis-2/3 lg:gap-7">
             <!-- THE ACCORDION WITH <details> <summary> HTML Tag -->
             <details
-              class="cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
+              class="dark:border-base-800 dark:bg-base-950cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
             >
               <summary
-                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−']"
+                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−'] dark:text-white"
               >
                 What services do you offer?
               </summary>
@@ -1072,13 +1099,13 @@
                 design, and more.
               </p>
             </details>
-            <hr class="border border-base-border w-full" />
+            <hr class="border border-base-border w-full dark:border-base-800" />
 
             <details
               class="cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
             >
               <summary
-                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−']"
+                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−'] dark:text-white"
               >
                 How do I know if this is right for my business?
               </summary>
@@ -1089,13 +1116,13 @@
                 design, and more.
               </p>
             </details>
-            <hr class="border border-base-border w-full" />
+            <hr class="border border-base-border w-full dark:border-base-800" />
 
             <details
               class="cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
             >
               <summary
-                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−']"
+                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−'] dark:text-white"
               >
                 How long does it take?
               </summary>
@@ -1106,13 +1133,13 @@
                 design, and more.
               </p>
             </details>
-            <hr class="border border-base-border w-full" />
+            <hr class="border border-base-border w-full dark:border-base-800" />
 
             <details
               class="cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
             >
               <summary
-                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−']"
+                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−'] dark:text-white"
               >
                 What services do you offer?
               </summary>
@@ -1123,13 +1150,13 @@
                 design, and more.
               </p>
             </details>
-            <hr class="border border-base-border w-full" />
+            <hr class="border border-base-border w-full dark:border-base-800" />
 
             <details
               class="cursor-pointer mb-3 text-black group flex flex-col gap-4 lg:gap-7"
             >
               <summary
-                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−']"
+                class="flex justify-between font-bold text-lg leading-lg lg:text-display-xs lg:leading-display-xs after:content-['+'] group-open:after:content-['−'] dark:text-white"
               >
                 Can I start with a small project first?
               </summary>
@@ -1200,7 +1227,7 @@
               type="text"
               id="name"
               placeholder="Enter your name"
-              class="w-full border border-base-border py-2 px-4 rounded-xl font-medium text-sm leading-sm"
+              class="w-full border border-base-border dark:border-base-800 py-2 px-4 rounded-xl font-medium text-sm leading-sm"
             />
           </div>
 
@@ -1212,7 +1239,7 @@
               type="email"
               id="email"
               placeholder="Enter your email"
-              class="w-full border border-base-border py-2 px-4 rounded-xl font-medium text-sm leading-sm"
+              class="w-full border border-base-border dark:border-base-800 py-2 px-4 rounded-xl font-medium text-sm leading-sm"
             />
           </div>
 
@@ -1225,7 +1252,7 @@
               name="message"
               id="message"
               placeholder="Enter your message"
-              class="w-full border border-base-border py-2 px-4 rounded-xl font-medium text-sm leading-sm h-[134px]"
+              class="w-full border border-base-border dark:border-base-800 py-2 px-4 rounded-xl font-medium text-sm leading-sm h-[134px]"
             ></textarea>
           </div>
 
@@ -1241,7 +1268,7 @@
               >
                 <input
                   type="checkbox"
-                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary dark:bg-base-950 dark:border-base-800"
                   checked
                 />
                 <!-- Custom check icon -->
@@ -1265,7 +1292,7 @@
               >
                 <input
                   type="checkbox"
-                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary dark:bg-base-950 dark:border-base-800"
                 />
                 <!-- Custom check icon -->
                 <svg
@@ -1288,7 +1315,7 @@
               >
                 <input
                   type="checkbox"
-                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary dark:bg-base-950 dark:border-base-800"
                 />
                 <!-- Custom check icon -->
                 <svg
@@ -1311,7 +1338,7 @@
               >
                 <input
                   type="checkbox"
-                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary dark:bg-base-950 dark:border-base-800"
                 />
                 <!-- Custom check icon -->
                 <svg
@@ -1334,7 +1361,7 @@
               >
                 <input
                   type="checkbox"
-                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary dark:bg-base-950 dark:border-base-800"
                 />
                 <!-- Custom check icon -->
                 <svg
@@ -1357,7 +1384,7 @@
               >
                 <input
                   type="checkbox"
-                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary"
+                  class="peer appearance-none w-5 h-5 border border-gray-400 rounded-sm bg-white checked:bg-primary checked:border-primary dark:bg-base-950 dark:border-base-800"
                 />
                 <!-- Custom check icon -->
                 <svg
@@ -1389,7 +1416,7 @@
     <footer class="py-6 px-4 md:px-[140px]">
       <div class="flex flex-col gap-2 py-6">
         <div
-          class="flex flex-col gap-6 bg-base-50 border border-base-border rounded-3xl p-5 lg:p-10 lg:gap-[60px]"
+          class="flex flex-col gap-6 bg-base-50 dark:bg-base-950 border border-base-border dark:border-base-800 rounded-3xl p-5 lg:p-10 lg:gap-[60px]"
         >
           <div
             class="flex flex-col gap-6 justify-start lg:justify-between lg:flex-row-reverse"
@@ -1397,7 +1424,12 @@
             <img
               src="./public/images/light-logo.svg"
               alt="logo"
-              class="h-8 max-w-[140px] lg:h-9 lg:max-w-[159px]"
+              class="h-8 max-w-[140px] lg:h-9 lg:max-w-[159px] dark:hidden"
+            />
+            <img
+              src="./public/images/logo-dark.svg"
+              alt="logo"
+              class="h-[36px] w-[159px] hidden dark:block"
             />
 
             <h1
@@ -1407,7 +1439,7 @@
             </h1>
           </div>
 
-          <hr class="border border-base-border w-full" />
+          <hr class="border border-base-border w-full dark:border-base-800" />
 
           <div
             class="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-6"
@@ -1442,42 +1474,63 @@
 
             <div class="flex gap-4">
               <div
-                class="border border-base-border h-10 w-10 rounded-full flex justify-center items-center"
+                class="border border-base-border dark:border-base-800 h-10 w-10 rounded-full flex justify-center items-center"
               >
                 <img
                   src="./public/icons/facebook-icon.svg"
                   alt="facebook-icon"
-                  class=""
+                  class="dark:hidden"
+                />
+                <img
+                  src="./public/icons/facebook-dark.svg"
+                  alt="facebook-icon"
+                  class="hidden dark:block"
                 />
               </div>
 
               <div
-                class="border border-base-border h-10 w-10 rounded-full flex justify-center items-center"
+                class="border border-base-border dark:border-base-800 h-10 w-10 rounded-full flex justify-center items-center"
               >
                 <img
                   src="./public/icons/instagram-icon.svg"
                   alt="instagram-icon.svg"
-                  class=""
+                  class="dark:hidden"
+                />
+
+                <img
+                  src="./public/icons/instagram-dark.svg"
+                  alt="instagram-icon.svg"
+                  class="hidden dark:block"
                 />
               </div>
 
               <div
-                class="border border-base-border h-10 w-10 rounded-full flex justify-center items-center"
+                class="border border-base-border dark:border-base-800 h-10 w-10 rounded-full flex justify-center items-center"
               >
                 <img
                   src="./public/icons/linkdn-icon.svg"
                   alt="linkdn-icon.svg"
-                  class=""
+                  class="dark:hidden"
+                />
+                <img
+                  src="./public/icons/linkdn-dark.svg"
+                  alt="linkdn-icon.svg"
+                  class="hidden dark:block"
                 />
               </div>
 
               <div
-                class="border border-base-border h-10 w-10 rounded-full flex justify-center items-center"
+                class="border border-base-border dark:border-base-800 h-10 w-10 rounded-full flex justify-center items-center"
               >
                 <img
                   src="./public/icons/tiktok-icon.svg"
                   alt="tiktok-icon.svg"
-                  class=""
+                  class="dark:hidden"
+                />
+                <img
+                  src="./public/icons/tiktok-dark.svg"
+                  alt="tiktok-icon.svg"
+                  class="hidden dark:block"
                 />
               </div>
             </div>
