@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- // change light to change theme mode -->
+<!-- // change dark tolight for change theme mode -->
 <html lang="en" data-theme="dark" class="dark">
   <head>
     <meta charset="UTF-8" />
@@ -19,13 +19,8 @@
         <img
           src="./public/images/light-logo.svg"
           alt="logo"
-          class="h-[36px] w-[159px] block dark:hidden"
-        />
-
-        <img
-          src="./public/images/logo-dark.svg"
-          alt="logo"
-          class="h-[36px] w-[159px] hidden dark:block"
+          id="logo"
+          class="h-[36px] w-[159px]"
         />
       </div>
 
@@ -45,16 +40,7 @@
       </div>
 
       <div class="md:hidden" id="menu-toggle">
-        <img
-          alt="menu"
-          src="./public/icons/hamburger.svg"
-          class="menu-icon-light dark:hidden"
-        />
-        <img
-          src="./public/icons/hamburger-dark.svg"
-          alt="menu"
-          class="menu-icon-dark hidden dark:block"
-        />
+        <img alt="menu" src="./public/icons/hamburger.svg" class="menu-icon" />
       </div>
     </header>
     <!-- Mobile Menu (Hidden by Default) -->
@@ -104,13 +90,8 @@
         >
           <div class="relative lg:min-h-[747px] w-full lg:min-w-[747px]">
             <img
-              class="w-full lg:h-full dark:hidden"
+              class="hero-image w-full lg:h-full"
               src="./public/images/hero-img.svg"
-              alt="hero-images"
-            />
-            <img
-              class="w-full lg:h-full hidden dark:block"
-              src="./public/images/hero-img-dark.png"
               alt="hero-images"
             />
 
@@ -143,7 +124,7 @@
         <div
           class="absolute bottom-0 w-[393px] h-[114px] lg:w-screen lg:h-[200px] isolate flex overflow-hidden gap-12 p-10 justify-center items-center"
         >
-          <div class="company-logo bg-[#707070]">
+          <div class="company-logo">
             <img
               class="h-[34px] lg:h-12 min-w-[98px] filter grayscale brightness-0 dark:brightness-90 opacity-70"
               src="./public/images/company-logo-adobe.svg"

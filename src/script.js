@@ -3,22 +3,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const toggleBtn = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.querySelector('.menu-icon');
+  const logo = document.getElementById('logo');
+  const heroImage = document.querySelector('.hero-image');
+  const logoDark = './public/images/logo-dark.svg';
+  const hamburgerDark = './public/icons/hamburger-dark.svg';
+  const hamburgerLight = './public/icons/hamburger.svg';
+  const iconXDark = './public/icons/x-icon-dark.svg';
+  const iconXLight = './public/icons/x-icon.svg';
+  const heroImgDark = './public/images/hero-img-dark.png';
+
+  const onDarkMode = () => {
+    if (isDark) {
+      logo.src = logoDark;
+      menuIcon.src = hamburgerDark;
+      heroImage.src = heroImgDark;
+    }
+  };
+
+  onDarkMode();
 
   let isOpen = false;
-
-  const menuIconLight = document.querySelector('.menu-icon-light');
-  const menuIconDark = document.querySelector('.menu-icon-dark');
-
   const updateMenuState = () => {
     if (isOpen) {
       mobileMenu.classList.remove('hidden');
-      menuIconLight.src = './public/icons/x-icon.svg';
-      menuIconDark.src = './public/icons/x-icon-dark.svg';
+      menuIcon.src = isDark ? iconXDark : iconXLight;
       document.body.classList.add('overflow-y-hidden');
     } else {
       mobileMenu.classList.add('hidden');
-      menuIconLight.src = './public/icons/hamburger.svg';
-      menuIconDark.src = './public/icons/hamburger-dark.svg';
+      menuIcon.src = isDark ? hamburgerDark : hamburgerLight;
       document.body.classList.remove('overflow-y-hidden');
     }
   };
