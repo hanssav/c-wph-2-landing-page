@@ -497,6 +497,9 @@
   .snap-mandatory {
     --tw-scroll-snap-strictness: mandatory;
   }
+  .scroll-pt-20 {
+    scroll-padding-top: calc(var(--spacing) * 20);
+  }
   .appearance-none {
     appearance: none;
   }

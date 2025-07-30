@@ -26,11 +26,21 @@
 
       <nav class="hidden md:inline">
         <ul class="flex gap-3 text-base font-semibold items-center">
-          <li>About</li>
-          <li>Service</li>
-          <li>Projects</li>
-          <li>Testimonial</li>
-          <li>FAQ</li>
+          <li class="text-md leading-md font-semibold px-4 py-2">
+            <a href="#about">About</a>
+          </li>
+          <li class="text-md leading-md font-semibold px-4 py-2">
+            <a href="#service">Service</a>
+          </li>
+          <li class="text-md leading-md font-semibold px-4 py-2">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="text-md leading-md font-semibold px-4 py-2">
+            <a href="#testimonial">Testimonial</a>
+          </li>
+          <li class="text-md leading-md font-semibold px-4 py-2">
+            <a href="#faq">FAQ</a>
+          </li>
         </ul>
       </nav>
       <div class="hidden md:block">
@@ -115,6 +125,7 @@
       </section>
 
       <section
+        id="about"
         class="relative flex flex-col items-center h-[144px] lg:h-[236px]"
       >
         <div class="relative font-bold text-base tracking-tight lg:text-2xl">
@@ -280,7 +291,10 @@
       </section>
 
       <!-- OUR PROCESS -->
-      <section class="flex flex-col gap-6 py-10 lg:py-20 lg:gap-16">
+      <section
+        id="service"
+        class="flex flex-col gap-6 py-10 lg:py-20 lg:gap-16"
+      >
         <div class="flex flex-col gap-[11px] text-center">
           <h2
             class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
@@ -858,7 +872,10 @@
       </section>
 
       <!-- ==================================== PORTOFOLIO ==================================== -->
-      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16">
+      <section
+        id="projects"
+        class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16"
+      >
         <div class="flex flex-col gap-[11px] text-center">
           <h2
             class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl"
@@ -934,6 +951,7 @@
       <!-- ==================================== TESTIMONI ==================================== -->
 
       <section
+        id="testimonial"
         class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16 overflow-hidden relative"
       >
         <!-- BLUR -->
@@ -1113,7 +1131,7 @@
 
       <!-- ==================================== SHORT Q&A ==================================== -->
 
-      <section class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16">
+      <section id="faq" class="flex flex-col py-10 gap-10 lg:py-20 lg:gap-16">
         <div class="flex flex-col gap-4 lg:flex-row lg:justify-between">
           <h2
             class="font-bold text-display-sm leading-display-sm lg:text-display-xl lg:leading-display-xl lg:tracking-tight lg:max-w-[331px]"
@@ -1476,12 +1494,7 @@
             <img
               src="./public/images/light-logo.svg"
               alt="logo"
-              class="h-8 max-w-[140px] lg:h-9 lg:max-w-[159px] dark:hidden"
-            />
-            <img
-              src="./public/images/logo-dark.svg"
-              alt="logo"
-              class="h-[36px] w-[159px] hidden dark:block"
+              class="footer-logo h-8 max-w-[140px] lg:h-9 lg:max-w-[159px]"
             />
 
             <h1
@@ -1531,12 +1544,7 @@
                 <img
                   src="./public/icons/facebook-icon.svg"
                   alt="facebook-icon"
-                  class="dark:hidden"
-                />
-                <img
-                  src="./public/icons/facebook-dark.svg"
-                  alt="facebook-icon"
-                  class="hidden dark:block"
+                  class="facebook-icon"
                 />
               </div>
 
@@ -1546,13 +1554,7 @@
                 <img
                   src="./public/icons/instagram-icon.svg"
                   alt="instagram-icon.svg"
-                  class="dark:hidden"
-                />
-
-                <img
-                  src="./public/icons/instagram-dark.svg"
-                  alt="instagram-icon.svg"
-                  class="hidden dark:block"
+                  class="instagram-icon"
                 />
               </div>
 
@@ -1562,12 +1564,7 @@
                 <img
                   src="./public/icons/linkdn-icon.svg"
                   alt="linkdn-icon.svg"
-                  class="dark:hidden"
-                />
-                <img
-                  src="./public/icons/linkdn-dark.svg"
-                  alt="linkdn-icon.svg"
-                  class="hidden dark:block"
+                  class="linkdn-icon"
                 />
               </div>
 
@@ -1577,12 +1574,7 @@
                 <img
                   src="./public/icons/tiktok-icon.svg"
                   alt="tiktok-icon.svg"
-                  class="dark:hidden"
-                />
-                <img
-                  src="./public/icons/tiktok-dark.svg"
-                  alt="tiktok-icon.svg"
-                  class="hidden dark:block"
+                  class="tiktok-icon"
                 />
               </div>
             </div>

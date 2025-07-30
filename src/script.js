@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const isDark = document.documentElement.classList.contains('dark');
+  document.documentElement.style.scrollPaddingTop = '90px';
+  document.documentElement.style.scrollBehavior = 'smooth';
 
   const toggleBtn = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -13,11 +15,27 @@ document.addEventListener('DOMContentLoaded', function () {
   const iconXLight = './public/icons/x-icon.svg';
   const heroImgDark = './public/images/hero-img-dark.png';
 
+  const facebookLogo = document.querySelector('.facebook-icon');
+  const instagramLogo = document.querySelector('.instagram-icon');
+  const linkdnLogo = document.querySelector('.linkdn-icon');
+  const tiktokLogo = document.querySelector('.tiktok-icon');
+  const footerLogo = document.querySelector('.footer-logo');
+
+  const facebookLogoDark = './public/icons/facebook-dark.svg';
+  const instagramLogoDark = './public/icons/instagram-dark.svg';
+  const linkdnLogoDark = './public/icons/linkdn-dark.svg';
+  const tiktokLogoDark = './public/icons/tiktok-dark.svg';
+
   const onDarkMode = () => {
     if (isDark) {
       logo.src = logoDark;
       menuIcon.src = hamburgerDark;
       heroImage.src = heroImgDark;
+      facebookLogo.src = facebookLogoDark;
+      instagramLogo.src = instagramLogoDark;
+      linkdnLogo.src = linkdnLogoDark;
+      tiktokLogo.src = tiktokLogoDark;
+      footerLogo.src = logoDark;
     }
   };
 
