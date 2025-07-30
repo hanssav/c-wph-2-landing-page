@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 /* if you want to light just comment this code  */
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-quicksand: 'Quicksand', sans-serif;
