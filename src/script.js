@@ -1,18 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const isDark = document.documentElement.classList.contains('dark');
+
   const toggleBtn = document.getElementById('menu-toggle');
-  const menuIcon = document.getElementById('menu-icon');
   const mobileMenu = document.getElementById('mobile-menu');
 
   let isOpen = false;
 
+  const menuIconLight = document.querySelector('.menu-icon-light');
+  const menuIconDark = document.querySelector('.menu-icon-dark');
+
   const updateMenuState = () => {
     if (isOpen) {
       mobileMenu.classList.remove('hidden');
-      menuIcon.src = './public/icons/x-icon.svg'; // icon "X"
+      menuIconLight.src = './public/icons/x-icon.svg';
+      menuIconDark.src = './public/icons/x-icon-dark.svg';
       document.body.classList.add('overflow-y-hidden');
     } else {
       mobileMenu.classList.add('hidden');
-      menuIcon.src = './public/icons/hamburger.svg'; // hamburger
+      menuIconLight.src = './public/icons/hamburger.svg';
+      menuIconDark.src = './public/icons/hamburger-dark.svg';
       document.body.classList.remove('overflow-y-hidden');
     }
   };
@@ -47,10 +53,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       tabButtons.forEach((btn) =>
-        btn.classList.remove('border-primary', 'text-black')
+        btn.classList.remove(
+          'border-primary',
+          isDark ? 'text-white' : 'text-black'
+        )
       );
 
-      button.classList.add('border-primary', 'text-black');
+      button.classList.add(
+        'border-primary',
+        isDark ? 'text-white' : 'text-black'
+      );
     });
   });
 
